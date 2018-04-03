@@ -12,7 +12,7 @@ describe('Dinosaur', function(){
   });
 
   it('a dinosaur should have a type', function(){
-
+    assert.strictEqual(dino1.type, 'Tyrannosaurus');
   });
 
 });
