@@ -1,0 +1,22 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stewartpaul22/week_11_day_02_homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stewartpaul22/week_11_day_02_homework/issues"
+  },
+  "homepage": "https://github.com/stewartpaul22/week_11_day_02_homework#readme",
+  "devDependencies": {
+    "mocha": "^5.0.5"
+  }
+}
