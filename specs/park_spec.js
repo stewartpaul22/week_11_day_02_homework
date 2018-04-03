@@ -32,7 +32,12 @@ describe('Park', function(){
     assert.strictEqual(park1.enclosure.length, 1);
   });
 
-  //should get all the dinosaurs with an offspring count of more than 2
-
+  it('get all dinosaurs with offspring count more than 2', function(){
+    park1.addDinosaur(dino1);
+    park1.addDinosaur(dino2);
+    park1.addDinosaur(dino3);
+    let dinoList = park1.listDinosWithOffspringGreaterThan(2);
+    assert.strictEqual(dinoList.length, 2);
+  });
 
 });
