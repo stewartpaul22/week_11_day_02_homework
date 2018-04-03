@@ -15,4 +15,8 @@ describe('Dinosaur', function(){
     assert.strictEqual(dino1.type, 'Tyrannosaurus');
   });
 
+  it('a dinosaur has a number of offspring yearly', function(){
+    assert.strictEqual(dino1.yearlyOffspring, 2);
+  });
+
 });
