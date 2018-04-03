@@ -12,6 +12,7 @@ describe('Park', function(){
     park1 = new Park();
     dino1 = new Dinosaur('Tyrannosaurus', 2);
     dino2 = new Dinosaur('Velociraptor', 4);
+    dino3 = new Dinosaur('Velociraptor', 4);
   });
 
   it('enclosure should start empty', function(){
@@ -23,7 +24,13 @@ describe('Park', function(){
     assert.strictEqual(park1.enclosure.length, 1);
   });
 
-  //should be able to remove all dinosaurs of a particular type
+  it('can remove all dinosaurs of a particular type', function(){
+    park1.addDinosaur(dino1);
+    park1.addDinosaur(dino2);
+    park1.addDinosaur(dino3);
+    park1.removeDinosaursByType('Velociraptor');
+    assert.strictEqual(park1.enclosure.length, 1);
+  });
 
   //should get all the dinosaurs with an offspring count of more than 2
 
